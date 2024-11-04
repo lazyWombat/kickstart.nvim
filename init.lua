@@ -101,6 +101,7 @@ vim.keymap.set('n', '<C-j>', '<cmd>try | cnext | catch | cfirst | catch endtry<C
 vim.keymap.set('n', '<C-k>', '<cmd>try | cprev | catch | clast | catch | endtry<CR>')
 vim.keymap.set('n', '<C-h>', '<cmd>try | colder | catch | endtry<CR>')
 vim.keymap.set('n', '<C-l>', '<cmd>try | cnewer | catch | endtry<CR>')
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
