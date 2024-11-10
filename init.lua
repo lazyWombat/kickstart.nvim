@@ -9,8 +9,6 @@ vim.g.have_nerd_font = true
 
 -- [[ Setting options ]]
 -- See `:help vim.opt`
--- NOTE: You can change these options as you wish!
---  For more options, you can see `:help option-list`
 
 -- Make line numbers default
 vim.opt.number = true
@@ -128,6 +126,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
 
+vim.filetype.add { extension = { njk = 'nunjucks', sketchpalette = 'json' } }
 -- [[ Configure and install plugins ]]
 --
 --  To check the current status of your plugins, run
@@ -519,6 +518,7 @@ require('lazy').setup({
       local servers = {
         -- clangd = {},
         gopls = {},
+        tailwindcss = {},
         -- pyright = {},
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
